@@ -102,7 +102,6 @@ on charger
     write /sys/bus/platform/devices/battery/FG_daemon_log_level 7
     write /sys/power/pm_async 0
     start fuelgauged
-    start servicemanager
 
     start vendor.light-hal-2-0
 
