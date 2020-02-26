@@ -52,6 +52,9 @@ ro.mtk_oma_drm_support=1
 ro.mtk_cta_drm_support=1
 ro.mtk_widevine_drm_l3_support=1
 
+# Fastbootd
+ro.fastbootd.available=true
+
 # FM Radio
 fmradio.driver.enable=1
 
