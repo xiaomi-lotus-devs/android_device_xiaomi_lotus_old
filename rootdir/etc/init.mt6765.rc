@@ -1,15 +1,15 @@
 # MTK platform .rc configure
 
-import ${ro.mtkrc.path}init.connectivity.rc
+import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6765.usb.rc
 import /vendor/etc/init/hw/init.project.rc
 import /FWUpgradeInit.rc
-import ${ro.mtkrc.path}init.volte.rc
-import ${ro.mtkrc.path}init.mal.rc
-import ${ro.mtkrc.path}init.sensor_1_0.rc
+import /vendor/etc/init/hw/init.volte.rc
+import /vendor/etc/init/hw/init.mal.rc
+import /vendor/etc/init/hw/init.sensor_1_0.rc
 
 # init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
-import ${ro.mtkrc.path}init.modem.rc
+import /vendor/etc/init/hw/init.modem.rc
 # *** DO NOT import the new rc file after this line ***
 
 on early-init
@@ -103,7 +103,7 @@ on charger
     write /sys/power/pm_async 0
     start fuelgauged
     start servicemanager
-    
+
     start vendor.light-hal-2-0
 
 on fs
