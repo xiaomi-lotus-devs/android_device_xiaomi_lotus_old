@@ -95,6 +95,7 @@ VENDOR_SECURITY_PATCH := 2021-01-01
 
 # SEPolicy
 include device/mediatek/sepolicy/sepolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # VINTF
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
