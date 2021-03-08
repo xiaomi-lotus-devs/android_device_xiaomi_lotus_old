@@ -873,7 +873,7 @@ on boot
     chmod 660 /dev/ttyGS1
     chown system radio /dev/ttyGS1
     
-    setprop init.svc.console stopped
+    stop console
 
 on property:ro.mtk_emmc_support=1
     # Support A/B feature for emmc boot region
