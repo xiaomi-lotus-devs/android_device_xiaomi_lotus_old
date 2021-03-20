@@ -70,6 +70,9 @@ function blob_fixup() {
         vendor/lib64/hw/android.hardware.sensors@1.0-impl-mediatek.so)
             "${PATCHELF}" --replace-needed "libbase.so" "libbase-v28.so" "${2}"
             ;;
+        vendor/lib/hw/audio.primary.mt6765.so)
+            "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v29.so" "${2}"
+            ;;
     esac
 }
 
