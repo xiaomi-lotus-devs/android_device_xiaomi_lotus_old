@@ -96,7 +96,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     factory_init.connectivity.rc \
     factory_init.rc \
-    init.aee.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6765.rc \

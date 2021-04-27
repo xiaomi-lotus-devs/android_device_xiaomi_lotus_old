@@ -8,7 +8,6 @@ import /init.environ.rc
 import /vendor/etc/init/trustonic.rc
 import ${ro.mtkrc.path}init.nvdata.rc
 import /vendor/etc/init/microtrust.rc
-import /vendor/etc/init/hw/init.aee.rc
 import /vendor/etc/init/hw/factory_init.project.rc
 
 on early-init

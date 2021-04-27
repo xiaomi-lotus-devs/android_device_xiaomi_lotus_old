@@ -4,9 +4,6 @@ persist.adb.nonblocking_ffs=1
 # AAL
 ro.mtk_aal_support=1
 
-# AEE
-ro.have_aee_feature=1
-
 # Audio
 ro.audio.soundfx.dirac=true
 persist.dirac.acs.controller=afm
