@@ -4,7 +4,6 @@ import ${ro.mtkrc.path}init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6765.usb.rc
 import /vendor/etc/init/hw/init.project.rc
 import /FWUpgradeInit.rc
-import /vendor/etc/init/hw/init.aee.rc
 import ${ro.mtkrc.path}init.volte.rc
 import ${ro.mtkrc.path}init.mal.rc
 import ${ro.mtkrc.path}init.sensor_1_0.rc

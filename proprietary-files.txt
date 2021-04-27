@@ -1,5 +1,13 @@
 # All blobs from lotus-user 8.1.0 O11019 V11.0.10.0.OFIMIXM release-keys, unless pinned
 
+# AEE
+vendor/lib/libudf.so
+vendor/lib/libdirect-coredump.so
+vendor/lib64/libaedv.so
+vendor/lib64/libudf.so
+vendor/lib64/libdirect-coredump.so
+vendor/lib64/libaedv.so
+
 # Audio
 vendor/etc/diracmobile.config
 vendor/etc/diracvdd.bin
@@ -790,12 +798,6 @@ vendor/lib64/libtida.so
 
 # Misc
 -vendor/app/EmCamera/EmCamera.apk
-vendor/bin/aeev
-vendor/bin/aee_aedv
-vendor/bin/aee_aedv64
-vendor/bin/aee_archivev
-vendor/bin/aee_core_forwarder
-vendor/bin/aee_dumpstatev
 vendor/bin/autobt
 vendor/bin/bip
 vendor/bin/ccci_fsd
@@ -862,7 +864,6 @@ vendor/bin/wmt_loader
 vendor/bin/wmt_loopback
 vendor/data/misc/pdc.txt
 vendor/etc/.tp/.ht120.mtc
-vendor/etc/aee-config
 vendor/etc/agps_profiles_conf2.xml
 vendor/etc/aurisys_config.xml
 vendor/etc/cdma_ecc_list.xml
@@ -882,8 +883,6 @@ vendor/etc/ecc_list_OP18.xml
 vendor/etc/emdlogger_usb_config.prop
 vendor/etc/fstb.cfg
 vendor/etc/fteh.cfg
-vendor/etc/init/aee_aedv.rc
-vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/android.hardware.broadcastradio@1.1-service.rc
 vendor/etc/init/camerahalserver.rc
 vendor/etc/init/consyslogger.rc
@@ -985,7 +984,6 @@ vendor/lib/lib3a.log.so
 vendor/lib/lib3a.n3d3a.so
 vendor/lib/libabfadp.so
 vendor/lib/libacdk.so
-vendor/lib/libaedv.so
 vendor/lib/libARC.so
 vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libblisrc32_vendor.so
@@ -1002,7 +1000,6 @@ vendor/lib/libcurl_xcap_md.so
 vendor/lib/libcustom_nvram.so
 vendor/lib/libcvsd_mtk.so
 vendor/lib/libDefaultFpsActor.so
-vendor/lib/libdirect-coredump.so
 vendor/lib/libdpframework.so
 vendor/lib/libDR.so
 vendor/lib/libeffecthal.base.so
@@ -1096,7 +1093,6 @@ vendor/lib/libSwJpgCodec.so
 vendor/lib/libsysenv.so
 vendor/lib/libteeclientjni.so
 vendor/lib/libthha.so
-vendor/lib/libudf.so
 vendor/lib/libufwriter.so
 vendor/lib/libui_ext.so
 vendor/lib/libusc.so
@@ -1146,7 +1142,6 @@ vendor/lib64/lib3a.log.so
 vendor/lib64/lib3a.n3d3a.so
 vendor/lib64/libabfadp.so
 vendor/lib64/libacdk.so
-vendor/lib64/libaedv.so
 vendor/lib64/libakl.so
 vendor/lib64/libARC.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
@@ -1162,7 +1157,6 @@ vendor/lib64/libcurl_xcap_md.so
 vendor/lib64/libcustom_nvram.so
 vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libDefaultFpsActor.so
-vendor/lib64/libdirect-coredump.so
 vendor/lib64/libdpframework.so
 vendor/lib64/libeffecthal.base.so
 vendor/lib64/libem_camera_jni.so
@@ -1234,7 +1228,6 @@ vendor/lib64/libSwJpgCodec.so
 vendor/lib64/libsysenv.so
 vendor/lib64/libteeclientjni.so
 vendor/lib64/libthha.so
-vendor/lib64/libudf.so
 vendor/lib64/libufwriter.so
 vendor/lib64/libui_ext.so
 vendor/lib64/libusc.so
