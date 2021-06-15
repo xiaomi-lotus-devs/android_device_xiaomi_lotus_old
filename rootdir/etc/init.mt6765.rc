@@ -28,9 +28,6 @@ on init
     chown root system /dev/stune/io/tasks
     chmod 0664 /dev/stune/io/tasks
 
-    # Support legacy paths
-    symlink /sdcard /mnt/sdcard
-
     # if primary storage is physical, set ro.vold.primary_physical to 1
     # setprop ro.vold.primary_physical 1
 
@@ -50,8 +47,6 @@ on init
     mkdir /vendor/nvdata 0771 system system
 # Create CIP mount point
     mkdir /custom
-
-    mkdir /mnt/cd-rom 0000 system system
 
 # change lk_env permission
     chown root system /proc/lk_env
@@ -123,10 +118,6 @@ on fs
     chmod 0775 /persist/
     chown root system /persist/
 
-on fs
-
-   mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
-
 on post-fs
     write /proc/bootprof "INIT:post-fs"
 
@@ -136,9 +127,6 @@ on post-fs
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "2 1100"
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "3 1100"
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "4 1100"
-
-    # Support legacy paths
-    symlink /sdcard /storage/sdcard0
 
     #change permissions for mediaserver
     chown root media /proc/clkmgr/mipi_test
