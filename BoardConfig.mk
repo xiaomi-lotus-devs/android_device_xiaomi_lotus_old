@@ -99,3 +99,6 @@ include device/mediatek/sepolicy/sepolicy.mk
 # VINTF
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+
+# VNDK
+BOARD_VNDK_VERSION := current
