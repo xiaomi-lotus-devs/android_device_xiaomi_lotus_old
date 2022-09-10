@@ -103,13 +103,12 @@ on charger
 on fs
     write /proc/bootprof "INIT:Mount_START"
     write /sys/kernel/debug/tracing/trace_marker "B|1|Mount"
-    mount_all /vendor/etc/fstab.mt6765
+    mount_all /vendor/etc/fstab.mt6765 --early
     exec /system/bin/tune2fs -O has_journal -u 10010 -r 4096 /dev/block/platform/bootdevice/by-name/userdata
     write /sys/kernel/debug/tracing/trace_marker "E"
     write /proc/bootprof "INIT:Mount_END"
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
-    swapon_all /fstab.enableswap
 
     mount ext4 /dev/block/platform/bootdevice/by-name/cust  /cust ro wait noatime nosuid nodev
     chown system system /cust
@@ -117,6 +116,10 @@ on fs
 
     chmod 0775 /persist/
     chown root system /persist/
+
+on late-fs
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.mt6765 --late
 
 on post-fs
     write /proc/bootprof "INIT:post-fs"
