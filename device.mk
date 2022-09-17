@@ -151,6 +151,9 @@ PRODUCT_PACKAGES += \
     fstab.mt6765_ramdisk \
     ueventd.mt6765.rc
 
+PRODUCT_PACKAGES += \
+    init.recovery.mt6765.rc
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
