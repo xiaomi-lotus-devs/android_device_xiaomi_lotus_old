@@ -53,6 +53,26 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib*/hw/gralloc.mt6765.so)
+            patchelf --add-needed "libutilscallstack.so" "${2}"
+            ;;
+        vendor/lib*/hw/hwcomposer.mt6765.so)
+            patchelf --add-needed "libutilscallstack.so" "${2}"
+            ;;
+        vendor/lib*/libsrv_um.so)
+            patchelf --add-needed "libutilscallstack.so" "${2}"
+            ;;
+        vendor/lib*/libion_ulit.so)
+            patchelf --add-needed "libutilscallstack.so" "${2}"
+            ;;
+        vendor/lib*/libmtkcam_stdutils.so)
+            patchelf --add-needed "libutilscallstack.so" "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
