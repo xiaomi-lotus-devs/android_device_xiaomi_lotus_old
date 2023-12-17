@@ -53,3 +53,7 @@ KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-li
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6765
+BOARD_HAS_MTK_HARDWARE := true
