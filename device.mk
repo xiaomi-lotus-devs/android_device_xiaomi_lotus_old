@@ -5,6 +5,21 @@
 #
 
 # Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    audio.bluetooth.default \
+    audio.usb.default \
+    audio.r_submix.default \
+    audio_policy.stub
+
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.0
+
+PRODUCT_PACKAGES += \
+    libaudiopreprocessing \
+    libtinycompress \
+    libtinyxml
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     $(LOCAL_PATH)/audio/audio_em.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_em.xml \
