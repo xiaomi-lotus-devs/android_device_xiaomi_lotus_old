@@ -96,6 +96,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 VENDOR_SECURITY_PATCH := 2021-01-01
 
 # SEPolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 include device/mediatek/sepolicy/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
