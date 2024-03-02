@@ -51,3 +51,4 @@ TARGET_KERNEL_CONFIG := lotus_defconfig
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-gnu-6.4.1/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
