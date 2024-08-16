@@ -15,7 +15,9 @@ PRODUCT_PACKAGES += \
     audio_policy.stub
 
 PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.0
+    android.hardware.audio@5.0.vendor \
+    android.hardware.soundtrigger@2.2 \
+    android.hardware.soundtrigger@2.2.vendor
 
 PRODUCT_PACKAGES += \
     libaudiopreprocessing \

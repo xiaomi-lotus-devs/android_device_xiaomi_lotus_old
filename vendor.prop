@@ -5,14 +5,9 @@ persist.adb.nonblocking_ffs=1
 ro.mtk_aal_support=1
 
 # Audio
-ro.audio.soundfx.dirac=true
-ro.vendor.audio.sos=true
-audio.chk.cal.us=0
-audio.chk.cal.spk=0
-ro.mtk_audio_alac_support=1
-ro.mtk_audio_tuning_tool_ver=V2.2
-ro.mtk_audio_ape_support=1
-ro.audio.usb.period_us=16000
+ro.vendor.mtk_audio_alac_support=1
+ro.vendor.mtk_audio_tuning_tool_ver=V2.2
+ro.vendor.mtk_audio_ape_support=1
 
 # Bluetooth
 ro.mtk_bt_support=1
@@ -173,12 +168,6 @@ persist.sys.job_delay=true
 persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 ro.control_privapp_permissions=log
 ro.opa.eligible_device=true
-persist.dirac.acs.controller=afm
-persist.dirac.afm.mode=local
-persist.dirac.poolsize=2
-persist.dirac.acs.storeSettings=1
-persist.dirac.config=64
-persist.dirac.acs.ignore_error=1
 ro.mtk_rebootmeta_support=0
 media.settings.xml=/vendor/etc/media_profiles.xml
 ro.mtk_wapi_support=1
