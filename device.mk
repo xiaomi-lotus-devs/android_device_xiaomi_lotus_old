@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.0.vendor
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
