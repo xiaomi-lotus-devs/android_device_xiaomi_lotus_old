@@ -173,6 +173,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.mt6765.rc
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0.vendor
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
