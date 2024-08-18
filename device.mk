@@ -179,7 +179,8 @@ PRODUCT_PACKAGES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0.vendor
+    android.hardware.broadcastradio@1.0.vendor \
+    android.hardware.broadcastradio@1.1.vendor
 
 # USB
 PRODUCT_PACKAGES += \
