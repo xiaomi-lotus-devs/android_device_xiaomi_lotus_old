@@ -67,6 +67,9 @@ function blob_fixup() {
         vendor/lib/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
             ;;
+        vendor/lib64/hw/android.hardware.sensors@1.0-impl-mediatek.so)
+            "${PATCHELF}" --replace-needed "libbase.so" "libbase-v28.so" "${2}"
+            ;;
     esac
 }
 
