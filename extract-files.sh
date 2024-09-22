@@ -70,6 +70,21 @@ function blob_fixup() {
         vendor/lib*/libmtkcam_stdutils.so)
             patchelf --add-needed "libutilscallstack.so" "${2}"
             ;;
+        vendor/lib*/hw/android.hardware.sensors@1.0-impl-mediatek.so)
+            patchelf --replace-needed "libbase.so" "libbase-v28.so" "${2}"
+            ;;
+        vendor/lib*/libnvram.so)
+            patchelf --replace-needed "libbase.so" "libbase-v28.so" "${2}"
+            ;;
+        vendor/lib*/libsysenv.so)
+            patchelf --replace-needed "libbase.so" "libbase-v28.so" "${2}"
+            ;;
+        vendor/bin/hw/android.hardware.drm@1.0-service.widevine)
+            patchelf --replace-needed "libbase.so" "libbase-v28.so" "${2}"
+            ;;
+        vendor/bin/hw/android.hardware.wifi@1.0-service)
+            patchelf --replace-needed "libbase.so" "libbase-v28.so" "${2}"
+            ;;
     esac
 }
 
